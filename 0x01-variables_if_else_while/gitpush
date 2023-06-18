@@ -1,0 +1,16 @@
+#!/bin/bash
+# Check if the user provided a commit message as an argument
+if [ -z "$1" ]; then
+  # If not, prompt the user to enter a commit message
+  read -p "Commit description: " desc
+else
+  # If yes, use the argument as the commit message
+  desc=$1
+fi
+# Add all files to the staging area
+git add .
+# Commit the changes with the given message
+git commit -m "$desc"
+# Push the changes to the remote repository
+git push origin master
+
