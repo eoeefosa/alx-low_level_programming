@@ -9,8 +9,8 @@ Basics of nested loops and 2D loops
 * [What are Header Files?](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)
 
 ## Description of Files
-<h6>0-holberton.c</h6>
-Prints ``Holberton`` followed by a new line, and returns 0.
+<h6>0. _putchar</h6>
+Prints ``_putchar`` followed by a new line, and returns 0.
 <h6>1-alphabet.c</h6>
 Prints the lowercase letters of the alphabet followed by a new line.
 <h6>2-print_alphabet_x10.c</h6>
