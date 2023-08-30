@@ -1,0 +1,21 @@
+#!/bin/bash
+# A git script that takes a commit message as an argument and runs git add, git commit and git push
+
+# check if the argument is given
+if [ -z "$1" ]; then
+ read -p "commit message: " desc
+else
+
+ # Assign the argument to a variable
+
+ msg="$1"
+
+fi
+
+# Run the git commands with the given message 
+git add .
+git commit -m "$msg"
+git push origin master
+
+# Print a success message
+echo "Done!"
